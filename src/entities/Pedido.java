@@ -30,4 +30,10 @@ public class Pedido {
 		return qtd * produto.getValorUnit();
 	}
 
+	@Override
+	public String toString() {
+		return "PRODUTO: " + produto.getNome() + ", PREÇO UNITÁRIO: R$" + produto.getValorUnit() + ", SUBTOTAL: R$"
+				+ subTotal();
+	}
+
 }
